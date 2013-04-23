@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Bygga appar snorfort - Joakim Bengtson</title>
+  <link href='http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic|Source+Code+Pro' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="vendor/reveal.js/css/reveal.css" />
+  <link rel="stylesheet" href="vendor/reveal.js/css/theme/moon.css" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="tomorrow-night-eighties.css">
+  <script src="http://yandex.st/highlightjs/7.3/highlight.min.js"></script>
+  <script>
+    hljs.tabReplace = '  ';
+    hljs.initHighlightingOnLoad();
+  </script>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <hgroup>
+          <h2>Att bygga webbapplikationer</h2>
+          <h1>snorfort!</h1>
+        </hgroup>
+        <p>En snabb genomgång av <strong>Joakim Bengtson</strong></p>
+      </section>
+      <section>
+        <img src="assets/nodejs-dark.png" />
+      </section>
+      <section>
+        <img src="assets/npm.png" />
+      </section>
+      <section>
+        <pre><code>$ npm install express</code></pre>
+        <pre><code>$ npm install -g express</code></pre>
+      </section>
+      <section>
+        <h2>package.json</h2>
+        <pre><code>{
+  "name": "a-package",
+  "version": "0.1.0",
+  "description": "Bla bla",
+  "dependencies": {
+    "express": "*"
+  },
+  "author": "Joakim Bengtson &lt;joakim@klei.se&gt;"
+}</code></pre>
+      </section>
+      <section>
+        <pre><code>$ npm update</code></pre>
+      </section>
+      <section>
+        <h1>Bower!</h1>
+      </section>
+      <section>
+        <pre><code>$ npm install -g bower</code></pre>
+      </section>
+      <section>
+        <img src="assets/AngularJS-large.png" />
+      </section>
+    </div>
+  </div>
+  <script src="vendor/reveal.js/js/reveal.js"></script>
+  <script>
+    Reveal.initialize({
+
+      // Display controls in the bottom right corner
+      controls: true,
+
+      // Display a presentation progress bar
+      progress: true,
+
+      // Push each slide change to the browser history
+      history: false,
+
+      // Enable keyboard shortcuts for navigation
+      keyboard: true,
+
+      // Enable the slide overview mode
+      overview: true,
+
+      // Vertical centering of slides
+      center: true,
+
+      // Loop the presentation
+      loop: false,
+
+      // Change the presentation direction to be RTL
+      rtl: false,
+
+      // Number of milliseconds between automatically proceeding to the
+      // next slide, disabled when set to 0, this value can be overwritten
+      // by using a data-autoslide attribute on your slides
+      autoSlide: 0,
+
+      // Enable slide navigation via mouse wheel
+      mouseWheel: false,
+
+      // Apply a 3D roll to links on hover
+      rollingLinks: true,
+
+      // Transition style
+      transition: 'fade' // default/cube/page/concave/zoom/linear/fade/none
+
+    });
+  </script>
+</body>
+</html>

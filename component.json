@@ -1,0 +1,12 @@
+{
+  "name": "nodeprat",
+  "version": "0.1.0",
+  "dependencies": {
+    "reveal.js": "~ba944767a713d2e456d287418f7b9b6ae7bd38db"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "vendor"
+  ]
+}
