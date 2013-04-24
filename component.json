@@ -2,7 +2,8 @@
   "name": "nodeprat",
   "version": "0.1.0",
   "dependencies": {
-    "reveal.js": "*"
+    "reveal.js": "*",
+    "highlightjs": "*"
   },
   "ignore": [
     "**/.*",
