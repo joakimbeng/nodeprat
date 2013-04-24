@@ -14,11 +14,22 @@
     <p>{{greeting}} {{name}}!</p>
     <div ng-controller="BeerCtrl">
       <p><label>Filter: <input ng-model="search" /></label></p>
-      <ul>
-        <li ng-repeat="beer in beers | filter:search">
-          {{beer.type}} - {{beer.name}} {{beer.alc}} %
-        </li>
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Typ</th>
+            <th>Namn</th>
+            <th>Styrka (vol.%)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="beer in beers">
+            <td>{{beer.type}}</td>
+            <td>{{beer.name}}</td>
+            <td>{{beer.alc}}</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </body>
 </html>
