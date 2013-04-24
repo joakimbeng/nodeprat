@@ -13,8 +13,9 @@
     <p><label>Name: <input ng-model="name" /></label></p>
     <p>{{greeting}} {{name}}!</p>
     <div ng-controller="BeerCtrl">
+      <p><label>Filter: <input ng-model="search" /></label></p>
       <ul>
-        <li ng-repeat="beer in beers">
+        <li ng-repeat="beer in beers | filter:search">
           {{beer.type}} - {{beer.name}} {{beer.alc}} %
         </li>
       </ul>
