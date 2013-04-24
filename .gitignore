@@ -14,3 +14,6 @@ results
 npm-debug.log
 
 vendor/
+
+example/node_modules/
+example/public/vendor/

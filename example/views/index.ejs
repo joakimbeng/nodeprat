@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="SnorfortApp">
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script type="text/javascript" src="/vendor/angular/angular.js"></script>
+    <script type="text/javascript" src="/javascripts/app.js"></script>
+    <script type="text/javascript" src="/javascripts/main-ctrl.js"></script>
+    <script type="text/javascript" src="/javascripts/beer-ctrl.js"></script>
+  </head>
+  <body ng-controller="MainCtrl">
+    <h1><%= title %></h1>
+    <p><label>Name: <input ng-model="name" /></label></p>
+    <p>{{greeting}} {{name}}!</p>
+    <div ng-controller="BeerCtrl">
+      <ul>
+        <li ng-repeat="beer in beers">
+          {{beer.type}} - {{beer.name}} {{beer.alc}} %
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
