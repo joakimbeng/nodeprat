@@ -17,9 +17,9 @@
       <table>
         <thead>
           <tr>
-            <th><a ng-click="setSort('type')">Typ</a></th>
-            <th><a ng-click="setSort('name')">Namn</a></th>
-            <th><a ng-click="setSort('alc')">Styrka (vol.%)</a></th>
+            <th><a ng-click="setSort('type')" ng-class="{desc: sortBy == 'type' &amp;&amp; reverse, asc: sortBy == 'type' &amp;&amp; !reverse}">Typ</a></th>
+            <th><a ng-click="setSort('name')" ng-class="{desc: sortBy == 'name' &amp;&amp; reverse, asc: sortBy == 'name' &amp;&amp; !reverse}">Namn</a></th>
+            <th><a ng-click="setSort('alc')" ng-class="{desc: sortBy == 'alc' &amp;&amp; reverse, asc: sortBy == 'alc' &amp;&amp; !reverse}">Styrka (vol.%)</a></th>
           </tr>
         </thead>
         <tbody>
