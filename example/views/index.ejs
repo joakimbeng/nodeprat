@@ -17,13 +17,13 @@
       <table>
         <thead>
           <tr>
-            <th><a ng-click="sortBy = 'type'">Typ</a></th>
-            <th><a ng-click="sortBy = 'name'">Namn</a></th>
-            <th><a ng-click="sortBy = 'alc'">Styrka (vol.%)</a></th>
+            <th><a ng-click="setSort('type')">Typ</a></th>
+            <th><a ng-click="setSort('name')">Namn</a></th>
+            <th><a ng-click="setSort('alc')">Styrka (vol.%)</a></th>
           </tr>
         </thead>
         <tbody>
-          <tr ng-repeat="beer in beers | filter:search | orderBy:sortBy">
+          <tr ng-repeat="beer in beers | filter:search | orderBy:sortBy:reverse">
             <td>{{beer.type}}</td>
             <td>{{beer.name}}</td>
             <td>{{beer.alc}}</td>
